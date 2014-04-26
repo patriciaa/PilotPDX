@@ -16,6 +16,26 @@
 
     <!-- Custom styles for this template -->
     <link href="jumbotron-narrow.css" rel="stylesheet">
+    
+    <!--JS -->
+    <script>jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -28,24 +48,26 @@
   </head>
 
   <body>
+<a href="#" class="back-to-top">Back to Top</a>
     <div class="container"> <br>
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <h3 class="text-muted">Be Represented!</h3>
       </div>
 
       <div class="jumbotron">
+	<a name="home"></a>
         <h1>Representation Tomatoes</h1>
         <p class="lead">Women, people of color, people of non-normative sexualities, people of disabilities: All are grossly underrepresented in media today. Representation Tomatoes challenges the erasure of oppressed groups in society. Movies are ranked by you and for you, so you can choose what you want to pay $12 to see.</p>
         <p>
 <!--SEARCH BAR -->
 
 <div id="tfheader">
-		<form id="tfnewsearch" method="get" action="http://www.imdb.com/find">
+		<form id="tfnewsearch" method="get" action="http://www.imdb.com/find" target="_blank">
 		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
 		</form>
 	<div class="tfclear"></div>
@@ -58,13 +80,13 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4>Subheading</h4>
+          <h4>Representation of Women</h4>
           <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-          <h4>Subheading</h4>
+          <h4>Representation of POC</h4>
           <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-          <h4>Subheading</h4>
+          <h4>Representation of </h4>
           <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
 
@@ -82,9 +104,9 @@
 
 <center><img src ="pictures/tomato.jpg"></center>
 <!-- ABOUT -->
-
+	<a name="about"></a>
       <div class="jumbotron">
-        <h1>About Rep. Tomatoes</h1>
+        <h1>About Representation Tomatoes</h1>
         <p class="lead">Representation Tomatoes was created by a group of high school students from Oregon during the PilotPDX hackathon. Concerned with social justice and ready to code, Lucas, Patricia, Abhinav, and Minjin created Representation Tomatoes. It's a way to rate films based on their representation of women, minorities, people of color, people with disabilities, and LGBT people based on quality (if representation exists at all!)</p>
 
       </div>
@@ -96,6 +118,8 @@
         <p class="lead">Pictures.</p>
 
       </div>
+
+
       <div class="footer">
         <p>&copy; Company 2014</p>
       </div>
@@ -106,5 +130,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+<!--back to top -->
+
   </body>
 </html>
