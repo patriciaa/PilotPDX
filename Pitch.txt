@@ -14,4 +14,31 @@ One person explains the "So What?" Why is this an important thing for the
 
 Generic potential presentation:
 
+There are many services that are meant to shield various types of people from
+harmful content on the internet and in the media. There are proxies that block
+material deemed inappropriate on school networks, there are parental filters
+that can be setup to protect from the same, and then there are review services.
+Specifically with regards to movies, there are services such as Rotten Tomatoes
+and IMDB, which are used to review how good a movie is, and are usually
+accompanied with an advisory for material deemed potentially offensive, such as
+violence, sexual content, use of illicit substances, etc.
 
+Not one of these services provides a way for people who are offended by the
+misrepresentation of minorities, specifically minorities they are a part of,
+to see community ratings about how a particular movie portrays that minority.
+
+Too often it is an issue that entire groups of society are left out, 
+intentionally misrepresented, or stereotypically represented. By creating this
+site, we are providing a way for people that are offended by this to both
+express, in the form of a rating, how they felt a movie portrayed particular
+social groups, and also a place for them to see opinions on how well groups
+were represented prior to potentially being offended.
+
+
+
+
+DEMO: We included a variety of functionality in the site. First and foremost, we
+have our homepage. We made sure to make the user interface as clutter-free
+and user friendly as possible. We included easy to find reviews, including a
+Most Recent reviews (give a moment for people to read through most recent
+review). 
